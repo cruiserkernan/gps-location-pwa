@@ -1,10 +1,9 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { useGeolocated } from 'react-geolocated';
 
 function App() {
-  const { coords, isGeolocationAvailable, isGeolocationEnabled } = useGeolocated({
+  const { coords } = useGeolocated({
     positionOptions: {
       enableHighAccuracy: true,
     },
